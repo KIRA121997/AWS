@@ -1,0 +1,49 @@
+how many EBScan attach to EC2?
+>>most of the instances support 28 attachments
+
+Q) can you store files on EBS?
+>>yes , AWS provide persistent block-level data storage.
+
+Q)limitation of EBS?
+>>EBS volumes are limited to 1 TB and can be attach to only single EC2 instances.
+
+can i increase EBS volume size?
+>>with amazon EBS volumes you can increase the volume size,change type etc.
+
+Q)how many EC2 can i have?
+>>by default aws has a limit of 20 instances per region.
+
+Q)how many EBS volume is an Instance?
+>>altough you attach upto 20 volumes on a single instance.(recommended attachment is not more than 10 volumes, where each volume can range upto 1GB - 1TB)
+
+Q)what is vCPU limit in aws?
+>>the vCPU of an instance within a family is 1 to 128 vCPU.
+
+Q)Can we attach single EBS to multiple EC2?
+>>YES, only EC2-optimized EBS volume . (only in read mode)
+
+
+EC2 IS AN EXAMPLE OF IaaS
+EBS IS AN EXAMPLE OF IaaS
+S3 IS AN EXAMPLE OF PaaS
+
+
+INSTANCES FEATURES
+>>Burstable performance instances.
+>>multiple storage options.
+>>EBS- optimized instances (for lor hourly fee)
+>>Cluster Networking (A cluster placement group provides low-latency networking between all instances in the cluster)
+
+TYPES OF INSTANCES
+>>GENERAL PURPOSE
+>>COMPUTE OPTIMIZED
+>>MEMORY OPTIMIZED
+>>ACCELERATED COMPUTING
+>>STORAGE OPTIMIZED
+
+INSTANCE=AVAILABILITY ZONE SPECIFIC
+
+
+
+MAXIMUM EBS VOLUME= 64TB
+
