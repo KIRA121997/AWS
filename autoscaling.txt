@@ -1,0 +1,114 @@
+1. An application consists of the following architecture:
+a. EC2 Instances in a single AZ behind an ELB
+
+b. A NAT Instance which is used to ensure that instances can download updates from the Internet
+
+Which of the following can be used to ensure better fault tolerance in this setup? Choose 2 answers from the options given below.
+
+A. Add more instances in the existing Availability Zone.
+
+B. Add an Auto Scaling Group to the setup.
+
+C. Add more instances in another Availability Zone.
+
+D. Add another ELB for more fault tolerance.
+
+Answer
+
+2. An application hosted on EC2 Instances has its promotional campaign due to start in 2 weeks. There is a mandate from the management to ensure that no performance problems are encountered due to traffic growth during this time. Which of the following must be done to the Auto Scaling Group to ensure this requirement can be fulfilled?
+A. Configure Step scaling for the Auto Scaling Group.
+
+B. Configure Dynamic Scaling and use Target tracking scaling Policy
+
+C. Configure Scheduled scaling for the Auto Scaling Group
+
+D. Configure Static scaling for the Auto Scaling Group
+
+Answer
+
+3. An infrastructure is being hosted in AWS using the following resources:
+a)A couple of EC2 Instances serving a Web-Based application
+
+b)An Elastic Balancer in front of the EC2 Instances
+
+c)An AWS RDS which has Multi-AZ enabled
+
+Which of the following can be added to the setup to ensure scalability?
+
+A. Add another ELB to the setup.
+
+B. Add more EC2 Instances to the setup.
+
+C. Enable Read Replicas for the AWS RDS.
+
+D. Add an Auto Scaling Group to the setup.
+
+Answer
+
+4. While reviewing the Auto Scaling events for your application, you notice that your application is scaling up and down multiple times in the same hour.
+What design choice could you make to optimize costs while preserving elasticity? Choose 2 answers from the options given below.
+
+A. Modify the Auto Scaling group termination policy to terminate the older instance first.
+
+B. Modify the Auto Scaling group termination policy to terminate the newest instance first.
+
+C. Modify the Auto Scaling group cool down timers.
+
+D. Modify the CloudWatch alarm period that triggers your Auto Scaling scale down policy
+
+Answer
+
+5. You create an Auto Scaling Group which is used to spin up instances On Demand. As an architect, you need to ensure that the instances are pre-installed with a software when they are launched. What are the ways in which you can achieve this? Choose 2 answers from the options given below.
+A. Add the software installation to the configuration for the Auto Scaling Group.
+
+B. Add the scripts for the installation in the User data section.
+
+C. Create a golden image and then create a launch configuration.
+
+D. Ask the IT operations team to install the software as soon as the instance islaunched.
+
+Answer
+
+6. You have a business-critical two-tier web application currently deployed in 2 Availability Zones in a single region, using Elastic Load Balancing and Auto Scaling. The app depends on synchronous replication at the database layer. The application needs to remain fully available even if one application AZ goes offline and if Auto Scaling cannot launch new instances in the remaining AZ. How can the current architecture be enhanced to ensure this?
+A. Deploy in 2 regions using Weighted Round Robin with Auto Scaling minimums set at 50%peak load per region.
+
+B. Deploy in 3 AZ with Auto Scaling minimum set to handle 33 per cent peak load per zone.
+
+C. Deploy in 3 AZ with Auto Scaling minimum set to handle 50 per cent peak load per zone.
+
+D. Deploy in 2 regions using Weighted Round Robin with Auto Scaling minimums set at 100%peak load per region.
+
+Answer
+
+7. You have an application hosted on AWS consisting of EC2 Instances launched via an Auto Scaling Group. You notice that the EC2 Instances are not scaling up on demand. What checks can be done to ensure that the scaling occurs as expected?
+A. Ensure that the right metrics are being used to trigger the scale out.
+
+B. Ensure that ELB health checks are being used.
+
+C. Ensure that the instances are placed across multiple Availability Zones.
+
+D. Ensure that the instances are placed across multiple regions.
+
+Answer
+
+8. Your architecture for an application currently consists of EC2 Instances sitting behind a classic ELB. The EC2 Instances are used to serve an application and are accessible through the internet. What can be done to improve this architecture in the event that the number of users accessing the application increases?
+A. Add another ELB to the architecture.
+
+B. Use Auto Scaling Groups.
+
+C. Use an Application Load Balancer instead.
+
+D. Use the Elastic Container Service.
+
+Answer
+
+9. Your Operations department is using an incident based application hosted on a set of EC2 Instances. These instances are placed behind an Auto Scaling Group to ensure the right number of instances are in place to support the application. The Operations department has expressed dissatisfaction with regard to poor application performance at 9:00 AM each day. However, it is also noted that the system performance returns to optimal at 9:45 AM.What can be done to ensure that this issue gets fixed?
+A. Create another Dynamic Scaling Policy to ensure that the scaling happens at 9:00 AM.
+
+B. Add another Auto Scaling group to support the current one.
+
+C. Change the Cool Down Timers for the existing Auto Scaling Group.
+
+D. Add a Scheduled Scaling Policy at 8:30 AM.
+
+Answer
