@@ -1,0 +1,31 @@
+- name: copy module
+  become: true
+  hosts: all
+  tasks:
+    - name: copy file
+      copy:
+        src: hosts
+      
+        dest: /mnt/redshift.txt
+
+- name : loop name
+  become: true
+  hosts: all
+  tasks:
+    - name : print city name
+      debug:
+        msg: "all my city name : {{item}}"
+      loop:
+        - nag
+        - pune
+        - mumbai
+        - chandrapur
+
+    - name : install packages
+      become: true
+      apt:
+        name: "{{item}}"
+        state: latest
+      loop:
+        - nginx
+
